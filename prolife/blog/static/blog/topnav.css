@@ -1,0 +1,19 @@
+.topnav {
+    background-color: #417690;
+    overflow: hidden;
+}
+
+.topnav a {
+    float: left;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+.topnav a:hover {
+    background-color: white;
+}
