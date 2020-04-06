@@ -12,7 +12,12 @@ def home(request):
     return render(request, 'blog/home.html',context)
 
 def about(request):
-    return render(request,'blog/about.html',{'title':'About'})
+    context= {
+
+        'title':'About',
+        'name':'lodyne'
+    }
+    return render(request,'blog/about.html',context)
 
 def sala(request):
     return render(request,'blog/sala.html')
