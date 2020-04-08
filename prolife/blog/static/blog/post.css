@@ -1,0 +1,21 @@
+.dropdown {
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: tomato;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.dropbtn ul {
+    display: none;
+    position: absolute;
+    background-color: teal;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px royalblue;
+}

@@ -12,15 +12,19 @@
     {% endif %}
     <link rel="stylesheet" href=" {% static 'blog/main.css' %}">
     <link rel="stylesheet" href=" {% static 'blog/topnav.css' %}">
+    <link rel="stylesheet" href="{% static 'blog/post.css' %}">
 
 </head>
 
 <body>
     <div class="topnav">
+
         <a href="{% url 'blog-home' %}">Prolife</a>
         <a href="{% url 'blog-about' %}">About</a>
         <a href="{% url 'blog-sala' %}">Prayers</a>
-        <a href="{% url 'blog-post' %}">Blog</a>
+        <div class="dropdown">
+            <a href="{% url 'blog-post' %}">Blog</a>
+        </div>
         <a href="{% url 'blog-contact' %}">Contact</a>
 
         <!-- <a href="/">Home</a>
