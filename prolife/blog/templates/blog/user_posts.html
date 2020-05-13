@@ -1,11 +1,11 @@
 {% extends 'blog/base.html' %}
 {% block content %}
-    <h1>Prolife Home</h1>
+    <h1 class="mb-3">Posts by {{ view.kwargs.username }} ({{ page_obj.paginator.count }})</h1>
     {% for post in posts %}
         <h2><a href="{% url 'post-detail' post.id %}">{{ post.title }}</a></h2>
         <!-- <h2>{{ post.title }}</h2> -->
         <a class="mr-2 "href="{% url 'user_posts' post.author.username %}">By {{ post.author }} </a>
-        <p> {{post.date_posted | date:"F d, Y"}}</p>
+        <small class="text_muted">{{post.date_posted | date:"F d, Y"}}</small>
         <p>{{ post.content }}</p>
 
     {% endfor %}
