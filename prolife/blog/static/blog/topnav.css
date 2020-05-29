@@ -3,7 +3,7 @@
     overflow: hidden;
 }
 
-.topnav a {
+.topnav div {
     float: left;
     color: black;
     text-align: center;
