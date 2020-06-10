@@ -14,15 +14,13 @@
 #main {
     /* width: 90vw; */
     /* margin: auto; */
-    padding-bottom: 40px;
+    padding-bottom: 120px;
     min-height: 100%;
 }
 
 #footer {
     text-align: center;
-    background-color: #333;
-    padding: 20px;
-    text-decoration: none;
+    /* background-color: #333; */
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -30,5 +28,47 @@
 }
 
 footer a {
-    margin: 10px;
+    margin: 20px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.fa {
+    padding: 5px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 3px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
 }
