@@ -1,12 +1,13 @@
 {% extends 'blog/base.html' %}
 {% block content %}
-    <h1>Prolife Home</h1>
+    <a href="{% url 'blog-home'%}"><< Back Home</a>
     <h2>{{ object.title }}</h2>
     <a class="mr-2 "href="{% url 'user_posts' object.author.username %}">By {{ post.author }} </a>
     <p>{{object.date_posted | date:"F d, Y"}}</p>
-    {% if object.author == user %}
-        <a href="{% url 'post-update' object.id %}">Update</a>
-        <a href="{% url 'post-delete' object.id %}">Delete</a>
-    {% endif %}
     <p>{{object.content }}</p> 
+    {% if object.author == user %}
+        <a class="btn btn-outline-secondary" href="{% url 'post-update' object.id %}">Update</a>
+        
+        <a class="btn btn-outline-danger" href="{% url 'post-delete' object.id %}">Delete</a>
+    {% endif %}
 {% endblock content %}
